@@ -1,4 +1,4 @@
-# Percurso Educativo LABirintar
+# Percurso Educativo Labirintar
 
 Landing page para inscrição nos Percursos Educativos e Mentorias da rede Labirintar.
 

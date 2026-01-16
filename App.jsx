@@ -64,7 +64,7 @@ const App = () => {
           <div className="relative overflow-hidden -mx-6 sm:-mx-8 -mt-6 sm:-mt-8">
             <img
               src={capa}
-              alt="Percurso Educativo LABirintar"
+              alt="Percurso Educativo Labirintar"
               className="w-full h-auto object-cover"
             />
           </div>
@@ -93,18 +93,11 @@ const App = () => {
                       .
                     </p>
 
-                    <p className="text-base">
-                      É ali - no encontro real com crianças, equipes e comunidades - que a Labirintar acontece.
-                    </p>
-                  </div>
-
-                  <button
-                    onClick={scrollToForm}
-                    className="px-6 py-3 bg-brand-goiaba hover:bg-brand-goiaba/90 text-white font-slab font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-md"
-                  >
-                    Inscrever-se
-                  </button>
+                  <p className="text-base">
+                    É ali - no encontro real com crianças, equipes e comunidades - que a Labirintar acontece.
+                  </p>
                 </div>
+              </div>
 
                 {/* Coluna Direita - Texto */}
                 <div className="md:col-span-3 space-y-6 text-brand-chocolate/85 leading-relaxed">
@@ -232,7 +225,7 @@ const App = () => {
             </h3>
             <div className="space-y-3 text-brand-chocolate/85">
               <p className="text-base">
-                Somente educadores cadastrados e autenticados na Rede Labirintar, via sistema Nina.
+                <strong className="text-brand-chocolate">Somente educadores cadastrados e autenticados na Rede Labirintar, via sistema Nina.</strong>
               </p>
               <p className="text-base">
                 Se você ainda não fez seu cadastro,{" "}
@@ -363,11 +356,11 @@ const App = () => {
           <footer className="text-center mt-12 space-y-4 border-t border-brand-chocolate/10 pt-8">
             <img
               src={logo}
-              alt="LABirintar"
+              alt="Labirintar"
               className="w-48 sm:w-64 h-auto mx-auto"
             />
             <p className="text-brand-chocolate/70 text-sm">
-              © 2025 LABirintar. Todos os direitos reservados.
+              © 2026 Labirintar. Todos os direitos reservados.
             </p>
           </footer>
         </main>
