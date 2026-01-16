@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div
       className="min-h-screen w-full flex flex-col items-center py-12 px-4 relative overflow-hidden"
-      style={{ backgroundColor: "#e6cbe4" }}
+      style={{ backgroundColor: "#aec5e7" }}
     >
       {/* Elementos decorativos de fundo - "rede" sutil */}
       <div className="fixed inset-0 opacity-[0.03] pointer-events-none">
@@ -139,18 +139,18 @@ const App = () => {
 
           {/* Duas camadas inseparáveis */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-slab font-bold text-brand-chocolate text-center">
+            <h3 className="text-xl sm:text-2xl font-slab font-bold text-brand-chocolate text-center">
               Para isso, nossa formação se organiza em duas camadas inseparáveis
             </h3>
 
             <div className="grid md:grid-cols-2 gap-6">
               {/* Percursos Educativos */}
-              <div className="bg-white rounded-xl shadow-md p-6 border-2 border-brand-creme">
+              <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 border-2 border-brand-creme">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-brand-goiaba rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-10 h-10 bg-brand-goiaba rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
                     1
                   </div>
-                  <h4 className="text-xl font-slab font-bold text-brand-chocolate">
+                  <h4 className="text-lg sm:text-xl font-slab font-bold text-brand-chocolate">
                     Percursos Educativos
                   </h4>
                 </div>
@@ -171,12 +171,12 @@ const App = () => {
               </div>
 
               {/* Mentorias */}
-              <div className="bg-white rounded-xl shadow-md p-6 border-2 border-brand-creme">
+              <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 border-2 border-brand-creme">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-brand-laranja rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-10 h-10 bg-brand-laranja rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
                     2
                   </div>
-                  <h4 className="text-xl font-slab font-bold text-brand-chocolate">
+                  <h4 className="text-lg sm:text-xl font-slab font-bold text-brand-chocolate">
                     Mentorias
                   </h4>
                 </div>
@@ -238,34 +238,34 @@ const App = () => {
 
           {/* Cards de Percursos */}
           <div className="space-y-6" ref={formRef}>
-            <h3 className="text-2xl font-slab font-bold text-brand-chocolate text-center mb-2">
+            <h3 className="text-xl sm:text-2xl font-slab font-bold text-brand-chocolate text-center mb-2">
               Faça sua inscrição
             </h3>
-            <p className="text-center text-brand-chocolate/70 mb-8">
+            <p className="text-center text-brand-chocolate/70 mb-8 text-sm sm:text-base">
               Um início de ciclo, um gesto de pertencimento
             </p>
 
             {/* Percurso Educativo */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border-2 border-brand-goiaba">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border-2 border-brand-goiaba">
               <div className="space-y-4">
-                <h4 className="text-2xl font-slab font-bold text-brand-chocolate">
+                <h4 className="text-xl sm:text-2xl font-slab font-bold text-brand-chocolate">
                   Percurso Educativo
                 </h4>
                 <p className="text-sm text-brand-chocolate/70 italic">
                   📌 Para educadores cadastrados e autenticados na Rede Labirintar
                 </p>
 
-                <div className="space-y-3 bg-brand-creme/30 p-5 rounded-lg border border-brand-creme">
-                  <div className="flex items-start gap-3">
-                    <div className="text-brand-goiaba font-bold text-lg">📅</div>
+                <div className="space-y-3 bg-brand-creme/30 p-4 sm:p-5 rounded-lg border border-brand-creme">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <div className="text-brand-goiaba font-bold text-lg flex-shrink-0">📅</div>
                     <div>
-                      <p className="font-bold text-brand-chocolate">29/01 (quarta-feira) | 18h às 21h — Presencial</p>
+                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">29/01 (quarta-feira) | 18h às 21h — Presencial</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <div className="text-brand-goiaba font-bold text-lg">📅</div>
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <div className="text-brand-goiaba font-bold text-lg flex-shrink-0">📅</div>
                     <div>
-                      <p className="font-bold text-brand-chocolate">30/01 (quinta-feira) | 18h às 21h — Presencial</p>
+                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">30/01 (quinta-feira) | 18h às 21h — Presencial</p>
                     </div>
                   </div>
                   
@@ -273,15 +273,15 @@ const App = () => {
                     <p className="text-sm text-brand-chocolate/85 mb-3">
                       <strong>Mediação:</strong>
                     </p>
-                    <div className="flex gap-4 items-start">
+                    <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
                       {/* Foto */}
                       <div className="flex-shrink-0">
-                        <div className="w-28 h-28 rounded-full overflow-hidden">
+                        <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden">
                           <img src={fotoLourdes} alt="Lourdes Atié" className="w-full h-full object-cover" />
                         </div>
                       </div>
                       {/* Bio */}
-                      <div className="flex-1">
+                      <div className="flex-1 text-center sm:text-left">
                         <p className="text-sm font-bold text-brand-chocolate mb-2">Lourdes Atié</p>
                         <div className="text-xs text-brand-chocolate/70 leading-relaxed space-y-2">
                           <p>
@@ -295,8 +295,8 @@ const App = () => {
                     </div>
                   </div>
 
-                  <div className="mt-3 bg-brand-lavanda/20 p-3 rounded">
-                    <p className="text-sm text-brand-chocolate/85">
+                  <div className="mt-3 bg-brand-lavanda/20 p-3 sm:p-4 rounded">
+                    <p className="text-xs sm:text-sm text-brand-chocolate/85">
                       📍 Local será divulgado em breve.
                     </p>
                   </div>
@@ -314,17 +314,17 @@ const App = () => {
             </div>
 
             {/* Mentoria */}
-            <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border-2 border-brand-laranja">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 border-2 border-brand-laranja">
               <div className="space-y-4">
-                <h4 className="text-2xl font-slab font-bold text-brand-chocolate">
+                <h4 className="text-xl sm:text-2xl font-slab font-bold text-brand-chocolate">
                   Mentoria
                 </h4>
 
-                <div className="space-y-3 bg-brand-creme/30 p-5 rounded-lg border border-brand-creme">
-                  <div className="flex items-start gap-3">
-                    <div className="text-brand-laranja font-bold text-lg">📅</div>
+                <div className="space-y-3 bg-brand-creme/30 p-4 sm:p-5 rounded-lg border border-brand-creme">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <div className="text-brand-laranja font-bold text-lg flex-shrink-0">📅</div>
                     <div>
-                      <p className="font-bold text-brand-chocolate">22/01 (quinta-feira) | 18h às 20h — Virtual</p>
+                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">22/01 (quinta-feira) | 18h às 20h — Virtual</p>
                     </div>
                   </div>
                   
@@ -332,15 +332,15 @@ const App = () => {
                     <p className="text-sm text-brand-chocolate/85 mb-3">
                       <strong>Mediação:</strong>
                     </p>
-                    <div className="flex gap-4 items-start">
+                    <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
                       {/* Foto */}
                       <div className="flex-shrink-0">
-                        <div className="w-28 h-28 rounded-full overflow-hidden">
+                        <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden">
                           <img src={fotoLuiz} alt="Luiz Camacho" className="w-full h-full object-cover" />
                         </div>
                       </div>
                       {/* Bio */}
-                      <div className="flex-1">
+                      <div className="flex-1 text-center sm:text-left">
                         <p className="text-sm font-bold text-brand-chocolate mb-2">Luiz Camacho</p>
                         <div className="text-xs text-brand-chocolate/70 leading-relaxed space-y-2">
                           <p>
@@ -354,8 +354,8 @@ const App = () => {
                     </div>
                   </div>
 
-                  <div className="mt-3 bg-brand-lavanda/20 p-4 rounded border border-brand-lavanda/40">
-                    <p className="text-sm text-brand-chocolate/85 font-semibold">
+                  <div className="mt-3 bg-brand-lavanda/20 p-3 sm:p-4 rounded border border-brand-lavanda/40">
+                    <p className="text-xs sm:text-sm text-brand-chocolate/85 font-semibold">
                       📌 Se a sua experiência já tiver sido escolhida por uma escola, você será direcionado(a) para um grupo de WhatsApp de Mentoria, conforme o contexto de atuação.
                     </p>
                   </div>
@@ -365,21 +365,21 @@ const App = () => {
           </div>
 
           {/* Mensagem Final */}
-          <div className="text-center space-y-4 py-8">
-            <p className="text-xl font-slab font-bold text-brand-chocolate">
+          <div className="text-center space-y-4 py-6 sm:py-8 px-4">
+            <p className="text-lg sm:text-xl font-slab font-bold text-brand-chocolate">
               Um início de ciclo, um gesto de pertencimento
             </p>
-            <p className="text-base text-brand-chocolate/85">
+            <p className="text-sm sm:text-base text-brand-chocolate/85">
               O ano começa, e com ele, a chance de viver um trabalho de construção coletiva.
             </p>
-            <p className="text-base text-brand-chocolate/85">
+            <p className="text-sm sm:text-base text-brand-chocolate/85">
               Que esse percurso seja um lugar de força, de encontro e de amadurecimento mútuo.
             </p>
             <div className="mt-6 space-y-2">
-              <p className="text-lg font-slab font-bold text-brand-chocolate">
+              <p className="text-base sm:text-lg font-slab font-bold text-brand-chocolate">
                 A escola nos espera.
               </p>
-              <p className="text-lg font-slab font-bold text-brand-chocolate">
+              <p className="text-base sm:text-lg font-slab font-bold text-brand-chocolate">
                 E a rede caminha junto.
               </p>
             </div>
