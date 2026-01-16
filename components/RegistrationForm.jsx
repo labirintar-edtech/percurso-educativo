@@ -532,10 +532,11 @@ export const RegistrationForm = () => {
           Inscrição confirmada!
         </h3>
         <p className="text-brand-chocolate text-lg mb-4">
-          Estamos muito felizes em ter você neste percurso formativo.
+          Estamos muito felizes em ter você neste percurso educativo.
         </p>
         <p className="text-brand-chocolate text-lg mb-4">
-          Em breve, você receberá um e-mail com todas as informações necessárias para participar.
+          Em breve, você receberá um e-mail com todas as informações necessárias
+          para participar.
         </p>
         <p className="text-brand-chocolate text-lg">
           Bem-vindo(a) ao sistema educativo da Labirintar!

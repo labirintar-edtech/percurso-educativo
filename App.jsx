@@ -259,13 +259,13 @@ const App = () => {
                   <div className="flex items-start gap-2 sm:gap-3">
                     <div className="text-brand-goiaba font-bold text-lg flex-shrink-0">📅</div>
                     <div>
-                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">29/01 (quarta-feira) | 18h às 21h — Presencial</p>
+                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">29/01 (quinta-feira) | 18h às 21h — Presencial</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2 sm:gap-3">
                     <div className="text-brand-goiaba font-bold text-lg flex-shrink-0">📅</div>
                     <div>
-                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">30/01 (quinta-feira) | 18h às 21h — Presencial</p>
+                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">30/01 (sexta-feira) | 18h às 21h — Presencial</p>
                     </div>
                   </div>
                   
