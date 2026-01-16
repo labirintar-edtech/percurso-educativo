@@ -657,13 +657,15 @@ export const RegistrationForm = () => {
         </div>
 
         {error && <p className="text-red-500 text-sm text-center">{error}</p>}
-        <button
-          type="submit"
-          disabled={isLoading}
-          className="bg-brand-goiaba text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-goiaba transform hover:scale-105 transition-all duration-300 shadow-md disabled:bg-brand-goiaba/60 disabled:cursor-not-allowed disabled:transform-none mx-auto block w-full"
-        >
-          {isLoading ? "Enviando..." : "Confirmar Inscrição"}
-        </button>
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="bg-brand-goiaba text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-goiaba transform hover:scale-105 transition-all duration-300 shadow-md disabled:bg-brand-goiaba/60 disabled:cursor-not-allowed disabled:transform-none"
+          >
+            {isLoading ? "Enviando..." : "Confirmar Inscrição"}
+          </button>
+        </div>
       </form>
     </div>
   );

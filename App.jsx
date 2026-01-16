@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import logo from './assets/logo.png';
-import capa from "./assets/capa23.png";
+import capa from "./assets/capa.png";
 import fotoLourdes from './assets/lourdes-atie.png';
 import fotoLuiz from './assets/luiz-camacho.png';
 import { RegistrationForm } from './components/RegistrationForm';
@@ -302,12 +302,14 @@ const App = () => {
                   </div>
                 </div>
 
-                <button
-                  onClick={scrollToForm}
-                  className="w-full px-6 py-3 bg-brand-goiaba hover:bg-brand-goiaba/90 text-white font-slab font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-md"
-                >
-                  👉 Faça sua inscrição para garantir seu lugar!
-                </button>
+                <div className="flex justify-center">
+                  <button
+                    onClick={scrollToForm}
+                    className="px-6 py-3 bg-brand-goiaba hover:bg-brand-goiaba/90 text-white font-slab font-bold rounded-lg transition-all duration-200 hover:scale-105 shadow-md"
+                  >
+                    👉 Faça sua inscrição para garantir seu lugar!
+                  </button>
+                </div>
               </div>
             </div>
 
