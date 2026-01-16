@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import logo from './assets/logo.png';
 import capa from "./assets/capa23.png";
+import fotoLourdes from './assets/lourdes-atie.png';
+import fotoLuiz from './assets/luiz-camacho.png';
 import { RegistrationForm } from './components/RegistrationForm';
 
 const App = () => {
@@ -268,12 +270,29 @@ const App = () => {
                   </div>
                   
                   <div className="mt-4 pt-4 border-t border-brand-creme">
-                    <p className="text-sm text-brand-chocolate/85 mb-2">
-                      <strong>Mediação:</strong> Lourdes Atié
+                    <p className="text-sm text-brand-chocolate/85 mb-3">
+                      <strong>Mediação:</strong>
                     </p>
-                    <p className="text-xs text-brand-chocolate/70 italic">
-                      (Mini bio Lourdes)
-                    </p>
+                    <div className="flex gap-4 items-start">
+                      {/* Foto */}
+                      <div className="flex-shrink-0">
+                        <div className="w-28 h-28 rounded-full overflow-hidden">
+                          <img src={fotoLourdes} alt="Lourdes Atié" className="w-full h-full object-cover" />
+                        </div>
+                      </div>
+                      {/* Bio */}
+                      <div className="flex-1">
+                        <p className="text-sm font-bold text-brand-chocolate mb-2">Lourdes Atié</p>
+                        <div className="text-xs text-brand-chocolate/70 leading-relaxed space-y-2">
+                          <p>
+                            Atié é carioca, socióloga, graduada pelo UFRJ – Universidade Federal do Rio de Janeiro e com pós-graduação em Educação e Construtivismo pela FLACSO - Facultad Latinoamericana de Ciencias Sociales, Buenos Aires.
+                          </p>
+                          <p>
+                            Tem quase quarenta anos de experiência no campo da Educação, como professora, assessora pedagógica e produtora de conteúdo, desenvolvendo projetos específicos e realizando palestras por todo Brasil. Atua com formação de professores e gestores de instituições educativas, das redes públicas e privadas de ensino.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="mt-3 bg-brand-lavanda/20 p-3 rounded">
@@ -308,12 +327,29 @@ const App = () => {
                   </div>
                   
                   <div className="mt-4 pt-4 border-t border-brand-creme">
-                    <p className="text-sm text-brand-chocolate/85 mb-2">
-                      <strong>Mediação:</strong> Luiz Camacho
+                    <p className="text-sm text-brand-chocolate/85 mb-3">
+                      <strong>Mediação:</strong>
                     </p>
-                    <p className="text-xs text-brand-chocolate/70 italic">
-                      (Mini bio Luiz)
-                    </p>
+                    <div className="flex gap-4 items-start">
+                      {/* Foto */}
+                      <div className="flex-shrink-0">
+                        <div className="w-28 h-28 rounded-full overflow-hidden">
+                          <img src={fotoLuiz} alt="Luiz Camacho" className="w-full h-full object-cover" />
+                        </div>
+                      </div>
+                      {/* Bio */}
+                      <div className="flex-1">
+                        <p className="text-sm font-bold text-brand-chocolate mb-2">Luiz Camacho</p>
+                        <div className="text-xs text-brand-chocolate/70 leading-relaxed space-y-2">
+                          <p>
+                            Psicólogo e pedagogo, com mais de três décadas dedicadas à educação. Iniciou sua trajetória no chão da escola, onde atuou como professor da Educação Infantil e do Ensino Fundamental por 17 anos.
+                          </p>
+                          <p>
+                            Coordenou projetos educacionais no terceiro setor, com destaque para o Pró-Saber São Paulo, na comunidade de Paraisópolis. Atualmente, é Coordenador Pedagógico da escola Estilo de Aprender. Além da educação, dedica-se à poesia, às artes visuais, à marcenaria, à escultura e às viagens de motocicleta.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="mt-3 bg-brand-lavanda/20 p-4 rounded border border-brand-lavanda/40">
