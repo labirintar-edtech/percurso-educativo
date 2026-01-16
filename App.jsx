@@ -237,7 +237,7 @@ const App = () => {
           </div>
 
           {/* Cards de Percursos */}
-          <div className="space-y-6" ref={formRef}>
+          <div className="space-y-6">
             <h3 className="text-xl sm:text-2xl font-slab font-bold text-brand-chocolate text-center mb-2">
               Faça sua inscrição
             </h3>
@@ -386,7 +386,7 @@ const App = () => {
           </div>
 
           {/* Formulário de Inscrição */}
-          <div className="w-full">
+          <div className="w-full" ref={formRef}>
             <RegistrationForm />
           </div>
 
