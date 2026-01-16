@@ -387,7 +387,7 @@ const educadores = [
   },
 ];
 
-export const RegistrationForm = ({ selectedPath }) => {
+export const RegistrationForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -395,19 +395,6 @@ export const RegistrationForm = ({ selectedPath }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [isManualEntry, setIsManualEntry] = useState(false);
-
-  const getPathTitle = () => {
-    switch(selectedPath) {
-      case 'base':
-        return 'Percurso Educativo — Formação Base da Rede';
-      case 'beacon':
-        return 'Mentoria e Percurso Pedagógico — Beacon School';
-      case 'viva':
-        return 'Mentoria e Percurso Pedagógico — Escola Viva';
-      default:
-        return 'Percurso Educativo';
-    }
-  };
 
   const handleEducadorChange = (e) => {
     const selectedNome = e.target.value;
@@ -502,7 +489,7 @@ export const RegistrationForm = ({ selectedPath }) => {
         name: name,
         email: email,
         phoneNumber: phone,
-        percurso: selectedPath,
+        percurso: 'percurso-educativo',
       };
 
       console.log("Enviando requisição:", payload);
@@ -560,10 +547,10 @@ export const RegistrationForm = ({ selectedPath }) => {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-8 sm:p-10">
       <h3 className="font-slab text-2xl sm:text-3xl font-bold text-brand-chocolate text-center mb-2">
-        Inscrição
+        Inscrição - Percurso Educativo
       </h3>
       <p className="text-center text-brand-chocolate/70 mb-6 text-sm">
-        {getPathTitle()}
+        Preencha os dados abaixo para garantir sua vaga
       </p>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
