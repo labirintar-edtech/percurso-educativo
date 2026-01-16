@@ -20,7 +20,7 @@ export const RegistrationForm = () => {
         const data = await response.json();
         setEducadores(data);
       } catch (err) {
-        console.error('Erro ao buscar educadores:', err);
+        console.error('Erro ao buscar educadores: ', err);
         setError('Erro ao carregar lista de educadores. Por favor, tente novamente.');
       } finally {
         setLoadingEducadores(false);
