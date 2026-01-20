@@ -255,20 +255,14 @@ const App = () => {
                   📌 Para educadores cadastrados e autenticados na Rede Labirintar
                 </p>
 
-                <div className="space-y-3 bg-brand-creme/30 p-4 sm:p-5 rounded-lg border border-brand-creme">
+                  <div className="space-y-3 bg-brand-creme/30 p-4 sm:p-5 rounded-lg border border-brand-creme">
                   <div className="flex items-start gap-2 sm:gap-3">
                     <div className="text-brand-goiaba font-bold text-lg flex-shrink-0">📅</div>
                     <div>
-                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">29/01 (quinta-feira) | 18h às 21h — Presencial</p>
+                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">29 e 30 de janeiro | 18h30 às 21h30 — Presencial</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-2 sm:gap-3">
-                    <div className="text-brand-goiaba font-bold text-lg flex-shrink-0">📅</div>
-                    <div>
-                      <p className="font-bold text-brand-chocolate text-sm sm:text-base">30/01 (sexta-feira) | 18h às 21h — Presencial</p>
-                    </div>
-                  </div>
-                  
+
                   <div className="mt-4 pt-4 border-t border-brand-creme">
                     <p className="text-sm text-brand-chocolate/85 mb-3">
                       <strong>Mediação:</strong>
@@ -296,8 +290,10 @@ const App = () => {
                   </div>
 
                   <div className="mt-3 bg-brand-lavanda/20 p-3 sm:p-4 rounded">
-                    <p className="text-xs sm:text-sm text-brand-chocolate/85">
-                      📍 Local será divulgado em breve.
+                    <p className="text-sm sm:text-base text-brand-chocolate/85">
+                      📍 Josefin Coworking
+                      <br />
+                      Rua Bagé, 204 - Vila Mariana
                     </p>
                   </div>
                 </div>
